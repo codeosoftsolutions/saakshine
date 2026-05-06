@@ -418,7 +418,7 @@ body{font-family:'Georgia',serif;background:#f0f0e8;min-height:100vh}
 
 /* Compass rose */
 .compass{
-  position:absolute;right:10px;bottom:900px;
+  position:absolute;right:1000px;bottom:600px;
   width:64px;height:64px;z-index:10;
   background:rgba(255,255,255,0.92);
   border-radius:50%;
@@ -501,10 +501,10 @@ body{font-family:'Georgia',serif;background:#f0f0e8;min-height:100vh}
   <!-- Legend -->
   <div class="legbar">
     <span style="font-size:10px;color:#888;font-family:Arial">Status:</span>
-    <div class="leg"><div class="ld" style="background:#22c55e;border:1px solid #16a34a"></div>Available (<span id="lc_av">0</span>)</div>
-    <div class="leg"><div class="ld" style="background:#ef4444;border:1px solid #dc2626"></div>Sold (<span id="lc_so">0</span>)</div>
-    <div class="leg"><div class="ld" style="background:#3b82f6;border:1px solid #2563eb"></div>Partially Sold (<span id="lc_pa">0</span>)</div>
-    <div class="leg"><div class="ld" style="background:#f59e0b;border:1px solid #d97706"></div>Registered (<span id="lc_re">0</span>)</div>
+    <div class="leg"><div class="ld" style="background:#22c55e;border:1px solid #16a34a"></div>Available (<span id="lc_av"></span>)</div>
+    <div class="leg"><div class="ld" style="background:#ef4444;border:1px solid #dc2626"></div>Sold (<span id="lc_so"></span>)</div>
+    <div class="leg"><div class="ld" style="background:#3b82f6;border:1px solid #2563eb"></div>Partially Sold (<span id="lc_pa"></span>)</div>
+    <div class="leg"><div class="ld" style="background:#f59e0b;border:1px solid #d97706"></div>Registered (<span id="lc_re"></span>)</div>
   </div>
 
   <!-- Map wrapper with padding -->
@@ -522,18 +522,11 @@ body{font-family:'Georgia',serif;background:#f0f0e8;min-height:100vh}
           <div class="hmda-stamp">
             HMDA<br>APPROVED<br>
             <span style="font-size:7px;color:#ffd54f">LP.001377/2025</span>
-
-            
           </div>
         </div>
       </div>
 
-      
-
-      <!-- SVG Map area -->
-      <div class="map-body" id="mapBody">
-
-        <!-- Compass Rose (SVG drawn) -->
+      <!-- Compass Rose (SVG drawn) -->
         <div class="compass" title="Compass">
           <svg width="60" height="60" viewBox="0 0 60 60">
             <!-- Outer ring -->
@@ -554,6 +547,8 @@ body{font-family:'Georgia',serif;background:#f0f0e8;min-height:100vh}
           </svg>
         </div>
 
+      <!-- SVG Map area -->
+      <div class="map-body" id="mapBody">
         <svg id="mapSvg" viewBox="0 0 1600 858" xmlns="http://www.w3.org/2000/svg"
              style="display:block;width:100%;background:#fff">
           <!-- White background -->
@@ -574,7 +569,6 @@ body{font-family:'Georgia',serif;background:#f0f0e8;min-height:100vh}
         </svg>
 
         
-
       </div>
 
       <!-- Footer with info -->
@@ -583,10 +577,10 @@ body{font-family:'Georgia',serif;background:#f0f0e8;min-height:100vh}
           
         </div>
         <div class="mf-counts">
-          <span class="mfc" style="color:#16a34a">■ Av: <span id="fc_av">0</span></span>
-          <span class="mfc" style="color:#dc2626">■ Sold: <span id="fc_so">0</span></span>
-          <span class="mfc" style="color:#2563eb">■ Part: <span id="fc_pa">0</span></span>
-          <span class="mfc" style="color:#d97706">■ Reg: <span id="fc_re">0</span></span>
+          <span class="mfc" style="color:#16a34a">■ Av: <span id="fc_av"></span></span>
+          <span class="mfc" style="color:#dc2626">■ Sold: <span id="fc_so"></span></span>
+          <span class="mfc" style="color:#2563eb">■ Part: <span id="fc_pa"></span></span>
+          <span class="mfc" style="color:#d97706">■ Reg: <span id="fc_re"></span></span>
         </div>
         <div class="mf-info" style="text-align:right">
           <b style="color:#1a237e">SAAKSHINE</b><br>
