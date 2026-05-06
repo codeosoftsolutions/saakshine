@@ -416,16 +416,6 @@ body{font-family:'Georgia',serif;background:#f0f0e8;min-height:100vh}
 .map-body{position:relative;overflow:hidden}
 .map-body svg{display:block;width:100%}
 
-/* Compass rose */
-.compass{
-  position:absolute;left:10px;bottom:400px;
-  width:64px;height:64px;z-index:10;
-  background:rgba(255,255,255,0.92);
-  border-radius:50%;
-  border:2px solid #1a237e;
-  display:flex;align-items:center;justify-content:center;
-  box-shadow:0 2px 8px rgba(0,0,0,0.15)
-}
 
 
 
@@ -531,27 +521,7 @@ body{font-family:'Georgia',serif;background:#f0f0e8;min-height:100vh}
       <img  src="./direction.jpeg" alt="" style="width: 150px; ">
      
 
-      <!-- Compass Rose (SVG drawn) -->
-        <div class="compass" title="Compass">
-          <svg width="60" height="60" viewBox="0 0 60 60">
-            <!-- Outer ring -->
-            <circle cx="30" cy="30" r="28" fill="none" stroke="#1a237e" stroke-width="1.5"/>
-            <!-- N arrow (red) -->
-            <polygon points="30,4 26,30 30,26 34,30" fill="#e53935"/>
-            <!-- S arrow (dark) -->
-            <polygon points="30,56 26,30 30,34 34,30" fill="#37474f"/>
-            <!-- E W lines -->
-            <line x1="4" y1="30" x2="56" y2="30" stroke="#90caf9" stroke-width="1"/>
-            <!-- Direction labels -->
-            <text x="30" y="14" text-anchor="middle" font-size="8" font-weight="900" fill="#e53935" font-family="Arial">N</text>
-            <text x="30" y="52" text-anchor="middle" font-size="7" font-weight="700" fill="#37474f" font-family="Arial">S</text>
-            <text x="8"  y="33" text-anchor="middle" font-size="7" font-weight="700" fill="#37474f" font-family="Arial">W</text>
-            <text x="52" y="33" text-anchor="middle" font-size="7" font-weight="700" fill="#37474f" font-family="Arial">E</text>
-            <!-- Center dot -->
-            <circle cx="30" cy="30" r="2.5" fill="#1a237e"/>
-          </svg>
-        </div>
-
+      
       <!-- SVG Map area -->
       <div class="map-body" id="mapBody">
         <svg id="mapSvg" viewBox="0 0 1600 858" xmlns="http://www.w3.org/2000/svg"
@@ -976,27 +946,27 @@ const AMENITIES=[
   // {id:2, pts:"100,0 200,0 200,858 100,858", type:"road",    label:"30 Mtrs Road",     dim:"30 Mtrs"},
   // {id:3, pts:"200,700 400,700 400,858 200,858", type:"park", label:"Park & Garden",   dim:""},
   // {id:4, pts:"0,0 1600,0 1600,30 0,30", type:"fencing", label:"Compound Wall"},
-      {id:9,pts:"445,355 415,840 455,830 475,355",type:"road",label:"road"},
-  {id:10,pts:"345,350 370,350 370,850 325,855 345,355",type:"road",label:"road"},
+    {id:9,pts:"445,355 415,840 455,830 475,355",type:"road",label:"Wide Road"},
+  {id:10,pts:"345,350 370,350 370,850 325,855 345,355",type:"road",label:"Wide Road"},
   {id:11,pts:"230,855 260,855 285,345 250,340 225,855",type:"road",label:"road"},
-  {id:12,pts:"155,340 180,340 170,860 135,855 155,340",type:"road",label:"road"},
-  {id:13,pts:"550,355 565,355 555,805 525,815 530,355",type:"road",label:"road"},
+  {id:12,pts:"155,340 180,340 170,860 135,855 155,340",type:"road",label:"Wide Road"},
+  {id:13,pts:"550,355 565,355 555,805 525,815 530,355",type:"road",label:"Wide Road"},
   {id:14,pts:"640,365 665,365 655,780 625,785 640,360",type:"road",label:"road"},
-  {id:15,pts:"735,305 770,305 745,745 725,755 735,305",type:"road",label:"road"},
-  {id:16,pts:"835,300 855,300 845,700 820,715 835,300",type:"road",label:"road"},
+  {id:15,pts:"735,305 770,305 745,745 725,755 735,305",type:"road",label:"Wide Road"},
+  {id:16,pts:"835,300 855,300 845,700 820,715 835,300",type:"road",label:"Wide Road"},
   {id:17,pts:"930,305 955,305 945,660 920,670 930,305",type:"road",label:"road"},
-  {id:18,pts:"1040,285 1050,295 1045,625 1020,630 1020,270",type:"road",label:"road"},
-  {id:19,pts:"1145,325 1155,330 1145,580 1115,590 1120,315",type:"road",label:"road"},
+  {id:18,pts:"1040,285 1050,295 1045,625 1020,630 1020,270",type:"road",label:"Wide Road"},
+  {id:19,pts:"1145,325 1155,330 1145,580 1115,590 1120,315",type:"road",label:"Wide Road"},
   {id:20,pts:"1220,395 1240,390 1240,535 1215,545 1220,395",type:"road",label:"road"},
   {id:21,pts:"60,345 85,345 80,450 60,445 55,345",type:"road",label:"road"},
-  {id:22,pts:"1415,465 1405,480 1330,490 80,450 80,405 1210,455 1415,465",type:"road",label:"road"},
+  {id:22,pts:"1415,465 1405,480 1330,490 80,450 80,405 1210,455 1415,465",type:"road",label:"Wide Road"},
   {id:23,pts:"830,655 170,625 170,665 830,680",type:"road",label:"road"},
-  {id:24,pts:"1460,445 1415,465 1405,480 1330,490 1325,495 820,715 655,780 340,855 460,860 690,800 1460,475 1460,445",type:"road",label:"road"},
+  {id:24,pts:"1460,445 1415,465 1405,480 1330,490 1325,495 820,715 655,780 340,855 460,860 690,800 1460,475 1460,445",type:"road",label:"Wide Road"},
   {id:25,pts:"1580,385 1590,405 1600,425 1510,475 1495,655 1450,655 1460,445 1585,385",type:"road",label:"road"},
-  {id:26,pts:"1140,755 1160,745 1110,620 1090,630 1140,755",type:"road",label:"road"},
-  {id:27,pts:"1235,720 1255,710 1200,590 1185,595 1235,720",type:"road",label:"road"},
-  {id:28,pts:"1345,680 1325,690 1270,555 1290,545 1345,680",type:"road",label:"road"},
-  {id:29,pts:"1410,650 1430,640 1375,515 1360,520 1410,655",type:"road",label:"road"},
+  {id:26,pts:"1140,755 1160,745 1110,620 1090,630 1140,755",type:"road",label:"Wide Road"},
+  {id:27,pts:"1235,720 1255,710 1200,590 1185,595 1235,720",type:"road",label:"Wide Road"},
+  {id:28,pts:"1345,680 1325,690 1270,555 1290,545 1345,680",type:"road",label:"Wide Road"},
+  {id:29,pts:"1410,650 1430,640 1375,515 1360,520 1410,655",type:"road",label:"Wide Road"},
   {id:30,pts:"70,855 45,330 700,355 710,265 795,260 825,230 900,265 1030,240 1235,350 1240,375 1375,350 1570,385 1595,395 1600,435 1520,480 1505,660 1450,665 1105,805 1020,670 695,810 475,860 70,855",type:"fencing",label:"fencing"}
 ];
 
