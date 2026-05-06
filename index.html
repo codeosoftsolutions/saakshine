@@ -418,7 +418,7 @@ body{font-family:'Georgia',serif;background:#f0f0e8;min-height:100vh}
 
 /* Compass rose */
 .compass{
-  position:absolute;right:10px;bottom:10px;
+  position:absolute;right:200px;bottom:700px;
   width:64px;height:64px;z-index:10;
   background:rgba(255,255,255,0.92);
   border-radius:50%;
@@ -522,30 +522,16 @@ body{font-family:'Georgia',serif;background:#f0f0e8;min-height:100vh}
           <div class="hmda-stamp">
             HMDA<br>APPROVED<br>
             <span style="font-size:7px;color:#ffd54f">LP.001377/2025</span>
+
+            
           </div>
         </div>
       </div>
 
+      
+
       <!-- SVG Map area -->
       <div class="map-body" id="mapBody">
-        <svg id="mapSvg" viewBox="0 0 1600 858" xmlns="http://www.w3.org/2000/svg"
-             style="display:block;width:100%;background:#fff">
-          <!-- White background -->
-          <rect width="1600" height="858" fill="#ffffff"/>
-          <!-- Grid lines (subtle) -->
-          <defs>
-            <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-              <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#f0f0f0" stroke-width="0.5"/>
-            </pattern>
-          </defs>
-          <rect width="1600" height="858" fill="url(#grid)"/>
-          <!-- Amenities layer (roads, parks etc drawn BELOW plots) -->
-          <g id="amenLayer"></g>
-          <!-- Plots layer -->
-          <g id="plotLayer"></g>
-          <!-- Dimension lines layer (drawn ON TOP) -->
-          <g id="dimLayer"></g>
-        </svg>
 
         <!-- Compass Rose (SVG drawn) -->
         <div class="compass" title="Compass">
@@ -567,13 +553,34 @@ body{font-family:'Georgia',serif;background:#f0f0e8;min-height:100vh}
             <circle cx="30" cy="30" r="2.5" fill="#1a237e"/>
           </svg>
         </div>
+
+        <svg id="mapSvg" viewBox="0 0 1600 858" xmlns="http://www.w3.org/2000/svg"
+             style="display:block;width:100%;background:#fff">
+          <!-- White background -->
+          <rect width="1600" height="858" fill="#ffffff"/>
+          <!-- Grid lines (subtle) -->
+          <defs>
+            <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+              <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#f0f0f0" stroke-width="0.5"/>
+            </pattern>
+          </defs>
+          <rect width="1600" height="858" fill="url(#grid)"/>
+          <!-- Amenities layer (roads, parks etc drawn BELOW plots) -->
+          <g id="amenLayer"></g>
+          <!-- Plots layer -->
+          <g id="plotLayer"></g>
+          <!-- Dimension lines layer (drawn ON TOP) -->
+          <g id="dimLayer"></g>
+        </svg>
+
+        
+
       </div>
 
       <!-- Footer with info -->
       <div class="map-footer">
         <div class="mf-info">
-          Sy No. 416, 418 &amp; 424 · Farooqnagar (M) · Rangareddy · Telangana<br>
-          File: 001377/HMDA/00368/SWDL/SHZ/2025 &nbsp;·&nbsp; Total Plots: <b id="tc">0</b>
+          
         </div>
         <div class="mf-counts">
           <span class="mfc" style="color:#16a34a">■ Av: <span id="fc_av">0</span></span>
