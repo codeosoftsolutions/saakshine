@@ -59,7 +59,7 @@ body{font-family:Arial,sans-serif;background:#fff;min-height:100vh;overflow-x:hi
 /* Compass TOP-RIGHT */
 .compass{
   position:absolute;right:8px;top:8px;
-  width:56px;height:56px;z-index:10;
+  width:52px;height:52px;z-index:10;
   background:rgba(255,255,255,0.95);
   border-radius:50%;border:2px solid #1a237e;
   display:flex;align-items:center;justify-content:center;
@@ -84,7 +84,8 @@ body{font-family:Arial,sans-serif;background:#fff;min-height:100vh;overflow-x:hi
   position:fixed;
   z-index:300;
 
-  width:90px;
+  width:40px;
+  height: 40px;
 
   background:#fff;
   border:1px solid #1a237e;
@@ -98,7 +99,7 @@ body{font-family:Arial,sans-serif;background:#fff;min-height:100vh;overflow-x:hi
 }
 @keyframes popIn{from{opacity:0;transform:scale(0.9)}to{opacity:1;transform:scale(1)}}
 #plotpop.open{display:block}
-.pop-header{padding:1px 1px;text-align:center}
+.pop-header{padding:-1px -1px;text-align:center}
 .pop-badge{display:inline-block;padding:2px 10px;border-radius:8px;
   font-size:5px;font-weight:500;margin-bottom:3px}
 .pop-no{font-size:5px;font-weight:500;color:#1a237e}
@@ -301,7 +302,7 @@ function buildAmenities(){
     park:    {fill:'#bbf7d0', stroke:'#16a34a', textColor:'#14532d',     label:'Park'},
     buffer:  {fill:'#86efac', stroke:'#22c55e', textColor:'#14532d',     label:'Road Buffer Area'},
     pool:    {fill:'#bae6fd', stroke:'#0284c7', textColor:'#075985',     label:'Swimming Pool'},
-    club:    {fill:'#e9d5ff', stroke:'#7c3aed', textColor:'#4c1d95',     label:'Clubhouse'},
+    club:    {fill:'#e9d5ff', stroke:'#7c3aed', textColor:'#4c1d95',     label:'Transformer'},
     gate:    {fill:'#fed7aa', stroke:'#ea580c', textColor:'#7c2d12',     label:'Entrance'},
     temple:  {fill:'#fef9c3', stroke:'#ca8a04', textColor:'#713f12',     label:'Temple'},
     water:   {fill:'#cffafe', stroke:'#0891b2', textColor:'#164e63',     label:'Water Tank'},
