@@ -84,32 +84,32 @@ body{font-family:Arial,sans-serif;background:#fff;min-height:100vh;overflow-x:hi
   position:fixed;
   z-index:300;
 
-  width:70px;
-  height: 70px;
+  width:50px;
+  height: 47px;
 
   background:#fff;
   border:1px solid #1a237e;
-  border-radius:6px;
+  border-radius:8px;
 
   box-shadow:0 2px 8px rgba(0,0,0,.15);
 
   overflow:hidden;
 
-  font-size:9px;
+  font-size:1px;
 }
 @keyframes popIn{from{opacity:0;transform:scale(0.9)}to{opacity:1;transform:scale(1)}}
 #plotpop.open{display:block}
 .pop-header{padding:-1px -1px;text-align:center}
-.pop-badge{display:inline-block;padding:2px 10px;border-radius:8px;
-  font-size:5px;font-weight:500;margin-bottom:3px}
-.pop-no{font-size:5px;font-weight:500;color:#1a237e}
-.pop-customer{font-size:10px;color:#e53935;font-weight:500;margin-top:1px}
-.pop-body{border-top:1px solid #e0e0e0;padding:4px 6px}
+.pop-badge{display:inline-block;padding:2px 5px;border-radius:8px;
+  font-size:5px;font-weight:500;margin-bottom:1px}
+.pop-no{font-size:3px;font-weight:300;color:#1a237e}
+.pop-customer{font-size:3px;color:#e53935;font-weight:300;margin-top:1px}
+.pop-body{border-top:1px solid #e0e0e0;padding:2px 4px}
 .pop-row{display:flex;justify-content:space-between;padding:1px 0;
-  border-bottom:1px solid #f0f0f0}
+  border-bottom:-1px solid #f0f0f0}
 .pop-row:last-child{border-bottom:none}
-.pop-lbl{font-size:5px;color:#888}
-.pop-val{font-size:6px;font-weight:400;color:#333}
+.pop-lbl{font-size:3px;color:#888}
+.pop-val{font-size:3px;font-weight:500;color:#333}
 .pop-act{display:flex;grid-template-columns:1fr 1fr;border-top:1px solid #e0e0e0}
 .pop-cl{padding:5px;background:#f5f5f5;border:none;color:#666;
   cursor:pointer;font-size:10px;font-weight:500}
@@ -237,10 +237,7 @@ body{font-family:Arial,sans-serif;background:#fff;min-height:100vh;overflow-x:hi
     <div class="pop-row"><span class="pop-lbl">Dimensions</span><span class="pop-val" id="pdim"></span></div>
     <div class="pop-row"><span class="pop-lbl">Type</span><span class="pop-val">Open Plot &middot; HMDA</span></div>
   </div>
-  <div class="pop-act">
-    <button class="pop-cl" onclick="cpop()">&#10005; Close</button>
-    <button class="pop-enq" onclick="enq()">&#128222; Enquire</button>
-  </div>
+  
 </div>
 
 <script>
